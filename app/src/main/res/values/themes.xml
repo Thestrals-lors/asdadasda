@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PSUTracerStudy" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+
+        <item name="fontFamily">@font/montserrat</item>
+
+        <item name="android:textCursorDrawable">@drawable/custom_cursor</item>
+
+        <item name="checkboxStyle">@style/CustomCheckBox</item>
+
+        <item name="radioButtonStyle">@style/CustomRadioButton</item>
+
+        <item name="android:statusBarColor">@color/statusBarColor</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="CustomCheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+    </style>
+
+    <style name="CustomRadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:paddingTop">2dp</item> <!-- Adjust top padding as needed -->
+        <item name="android:paddingBottom">2dp</item> <!-- Adjust bottom padding as needed -->
+    </style>
+
+
+    <style name="CustomButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_background</item>
+    </style>
+
+    <style name="MyDatePickerDialogTheme" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <!-- Customize your date picker appearance here -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <!-- Add more attributes as needed -->
+    </style>
+
+    <style name="Theme.PSUTracerStudy" parent="Base.Theme.PSUTracerStudy" />
+</resources>

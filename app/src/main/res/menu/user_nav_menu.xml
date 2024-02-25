@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/surveyTab"
+        android:icon="@drawable/survey_icon"
+        android:title="Survey" />
+
+    <item
+        android:id="@+id/profileTab"
+        android:icon="@drawable/profile_icon"
+        android:title="Profile"/>
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#041886</color>
+    <color name="colorPrimaryDark">#E7EAEA</color>
+    <color name="colorAccent">#F8F8FF</color>
+
+    <color name="cardBack">#1730BD</color>
+
+    <color name="yellow">#FDD835</color>
+
+    <color name="black">#333333</color>
+    <color name="white">#F8F8FF</color>
+
+    <color name="gery">#808080</color>
+
+    <color name="statusBarColor">#F8F8FF</color>
+
+</resources>

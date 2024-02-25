@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "515531073790",
+    "project_id": "bscstracerstudy2024",
+    "storage_bucket": "bscstracerstudy2024.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515531073790:android:b9d5053c04531ffa2a9daf",
+        "android_client_info": {
+          "package_name": "com.bl4nk.psutracerstudy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-OLegUpbjBxiUYoeA29RxohSLXaL8JUU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

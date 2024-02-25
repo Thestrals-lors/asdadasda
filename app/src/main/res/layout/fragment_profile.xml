@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".user_fragment.Profile">
+
+
+    <RelativeLayout
+        android:id="@+id/profileLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"
+            android:src="@drawable/user_profile"
+            app:civ_border_color="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="userName"
+            android:layout_below="@id/profileImage"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/surveyAnswerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/CustomButtonStyle"
+            android:layout_centerHorizontal="true"
+            android:text="Survey Summary"
+            android:layout_below="@id/userName"
+            android:layout_marginTop="8dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:id="@+id/basicInfoLayout"
+        android:layout_width="match_parent"
+        android:paddingHorizontal="20dp"
+        android:layout_below="@id/profileLayout"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Basic Information"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age:"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:id="@+id/userAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sex:"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:id="@+id/userSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Birthday:"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:id="@+id/userBirthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Civil Status:"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:id="@+id/userCivilStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number:"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:id="@+id/userMobileNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/educationalLayout"
+        android:layout_below="@id/basicInfoLayout"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Educational Background"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Batch year:"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:id="@+id/userBatchYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Honors Received:"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:id="@+id/userHonors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Professional Exam Passed:"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:id="@+id/userExamPassed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_below="@id/educationalLayout"
+        android:id="@+id/logoutBtn"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:text="LOGOUT"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        style="@style/CustomButtonStyle"/>
+
+
+</RelativeLayout>
